@@ -22,3 +22,51 @@
   </div>  
 </div>
 
+<div class="col">
+
+<!-- 
+<ul>
+  <li *ngFor="let track of GetUserData.results">
+    {{track.name}}
+  </li>
+</ul> -->
+
+<!--   <div class="form-group">
+    <input type="search"
+           class="form-control"
+           placeholder="Enter search string"
+           #search> 
+  </div> -->
+
+
+
+<!-- <div class="text-center">
+  <p class="lead" *ngIf="loading">Loading...</p>
+</div> -->
+
+<input type="button" class="btn align-middle" value="Get Activities" (click)="doGet()">
+
+<div class="container">
+  <div class="col text-center Item" *ngFor="let item of _data.ActivityItem">
+      <div class="overlay"> <p class="text-center">  {{ item.price | currency:'₹':true:'1.0-0' }} <p>  <button type="submit" class="btn" (click)="addToCart(item)"> Add to Cart  </button>  </div>
+      <img src="{{item.src}}">
+      <p class="text-center">{{ item.name }}</p>
+  </div>
+</div>
+
+
+<div class="cart">
+<h1 class="text-center" > CART ITEMS </h1>
+<p class="text-right"> Your Cart {{ cart.length }} </p>
+<div class="container-auto-fill"  [@cartItem]="cart.length">
+  <div class="col text-center Item" *ngFor="let item of cart">
+      <div class="overlay"> <p class="text-center">  {{ item.price | currency:'₹':true:'1.0-0' }} <p>  </div>
+      <img src="{{item.src}}">
+      <p class="text-center">{{ item.name }}</p>
+  </div>
+</div>
+</div>
+
+
+</div>
+

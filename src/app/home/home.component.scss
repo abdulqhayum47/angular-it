@@ -1,7 +1,12 @@
 
 .container {
 	display: grid;
-	grid-template-columns: 50% auto;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+
+.container-auto-fill {
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
 }
 
 .col {
@@ -14,6 +19,7 @@
 
 .color-light {
 	background: #57b3F1;
+		margin-bottom: 2em;	
 }
 
 input.txt {
@@ -37,4 +43,72 @@ input.btn {
 	font-weight: bold;
 	padding: .5em;
 	cursor: pointer;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.align-middle {
+	margin: auto;
+}
+img {
+	width: 200px;
+}
+
+.overlay {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    margin-left: 17px;
+}
+
+.overlay p {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.overlay .btn {
+    border: 0;
+    display: block;
+    background: #A5F883;
+    color: #2885C4;
+    width: 200px;
+    font-size: 16px;
+    height: 40px;
+    color: #3FA0E1;;
+    margin-top: 160px;
+    cursor: pointer;
+}
+
+.overlay .btn:hover {
+    font-size: 24px;
+    background: #ff5722bd;
+    color: #ffffff;
+}
+
+.Item:hover .overlay {
+	display: block;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+.cart {
+	border-top: solid 2px #ededed;
+	margin-top: 20px;
 }
