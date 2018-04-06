@@ -4,14 +4,14 @@ import {DataService} from '../data.service';
 import {ReactiveFormsModule, FormControl, FormsModule} from '@angular/forms';
 import 'rxjs/Rx';
 
-export class ActivityItem {
-  constructor(public name: string,
-              public count: string,
-              public price: string,
-              public src: string,
-              public id: string) {
-  }
-}
+// export class ActivityItem {
+//   constructor(public name: string,
+//               public count: string,
+//               public price: string,
+//               public src: string,
+//               public id: string) {
+//   }
+// }
 
 
 @Component({
@@ -92,7 +92,7 @@ export class HomeComponent implements OnInit {
 
   private loading: boolean = false;
 
-  constructor(private _data: DataService) { }
+  constructor(public _data: DataService) { }
 
   ngOnInit() {
   	this._data.goal.subscribe(res => this.goals = res);
