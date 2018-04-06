@@ -1,0 +1,8 @@
+[
+	{"name":"Pearl Jam Live",  "count": 0, "price": 200,"src":"./assets/img/events/pj.jpg", "id":1},
+    {"name":"Guns n Roses","count": 0, "price": 400,"src":"./assets/img/events/gnr.jpg","id":2},
+    {"name":"Alice in Chains Live", "count": 0, "price": 1000,"src":"./assets/img/events/anc.jpg","id":3},
+    {"name":"Pink Floyd","count": 0, "price": 250,"src":"./assets/img/events/pf.jpg","id":4},
+    {"name":"Tool live","count": 0, "price": 700,"src":"./assets/img/events/tool.jpg","id":5},
+    {"name":"Coldplay","count": 0, "price": 150,"src":"./assets/img/events/coldplay.jpg","id":6}
+]
